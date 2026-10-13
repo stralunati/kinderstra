@@ -1,0 +1,136 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.container{
+  padding: 0;
+  padding-top:10px;
+  margin: 10px;
+  width: 210mm;
+  height: 297mm;
+  display: inline-block;
+}
+
+/* Configuration d'une étiquette */
+.etiquette{
+  position: relative;
+  width: 75mm;
+  height: 20mm;
+  border: 1px solid black;
+  display: inline-block;
+  background-image:radial-gradient(#eee 30%,#ddd 70%);
+}
+
+/* Les 3 premières div doivent être en inline-block */
+.etiquette div:nth-child(-n+3){
+  display: inline-block;
+}
+
+/* Première Div (img) */
+.etiquette div:nth-child(1){
+  margin: 0;
+  padding: 0,5mm;
+  height: 100%;
+  /*width: 30%;*/
+}
+.etiquette div:nth-child(1) img{
+  position: absolute;
+  left: 1mm;
+  height: 90%;
+}
+/* Fin Première Div */
+
+
+/* Deuxième Div (drapeau) */
+.etiquette div:nth-child(2){
+  position: absolute;
+  bottom: 1mm;
+  left: 19mm;
+  width: 75%;
+  height: 7mm;
+  text-align: left;
+  font-family:Comic Sans MS;
+  font-size:9px;
+}
+
+[class ^="drap"]{
+  display: inline-block;
+  width: 7mm;
+  height: 7mm;
+  margin: 0 0.5mm;
+}
+
+[class$="fr"]{
+  background: url("drap_fr.png") bottom no-repeat;
+}
+
+[class$="all"]{
+  background: url("drap_all.png") bottom no-repeat;
+}
+[class$="eur"]{
+  background: url("drap_eur.png") bottom no-repeat;
+}
+[class$="e-e"]{
+  background: url("drap_e-e.png") bottom no-repeat;
+}
+
+[class$="ita"]{
+  background: url("drap_ita.png") bottom no-repeat;
+}
+[class$="bel"]{
+  background: url("drap_bel.png") bottom no-repeat;
+}
+[class$="pol"]{
+  background: url("drap_pol.png") bottom no-repeat;
+}
+[class$="rus"]{
+  background: url("drap_rus.png") bottom no-repeat;
+}
+[class$="mex"]{
+  background: url("drap_mex.png") bottom no-repeat;
+}
+[class$="sui"]{
+  background: url("drap_sui.png") bottom no-repeat;
+}
+[class$="esp"]{
+  background: url("drap_esp.png") bottom no-repeat;
+}
+[class$="aus"]{
+  background: url("drap_aus.png") bottom no-repeat;
+}
+[class$="jap"]{
+  background: url("drap_jap.png") bottom no-repeat;
+}
+[class$="ukr"]{
+  background: url("drap_ukr.png") bottom no-repeat;
+}
+[class$="ang"]{
+  background: url("drap_ang.png") bottom no-repeat;
+}
+/* Fin Deuxième Div */
+
+
+/* Troisième Div (Le texte) */
+.etiquette div:nth-child(3){
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  width: 75%;
+  text-align: center;
+  height: 100%;
+  font-family:Comic Sans MS;
+  /*Si une ligne line-height 200% */
+  line-height: 1.4;
+}
+
+.etiquette div:nth-child(3) p{
+  height: 100%;
+  vertical-align: middle;
+  font-size: 4mm;
+}
+/* Fin Troisième Div */
