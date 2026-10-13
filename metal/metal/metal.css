@@ -1,0 +1,327 @@
+body {
+    width: 990px;
+    margin: auto;
+    font-family: Comic Sans MS;
+    background-color: #f9ece3;
+}
+
+.search-logo{
+	margin: 10px;
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.search-logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url('/montable/montable/montable/search-logo-80.png') center no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+/*titre*/
+header{
+	height: auto;
+    text-align: center;
+    background-color: #f9ece3;
+}
+.titre {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.nom {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+    vertical-align: bottom;
+    color: red;
+}
+.serie {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    color: blue;
+}
+/*fin titre*/
+/*BPZ*/
+.bpz400 {
+    width: 405px;
+    margin: 10px auto 20px;
+	text-align: center;
+    padding: 10px;
+    padding-bottom: 5px;
+    border: #8d671d solid 3px;
+    background-color: #e5c380;
+}
+.module400 {
+    width: 405px;
+    margin: 5px auto 5px auto;
+    text-align: center;
+    font-size: 15px;
+}
+/*detail*/
+.copie4 ,
+.copie6 {
+    padding: 15px;
+    border: #9b7120 solid 3px;
+    font-size: 15px;
+    background-color: #ebd09c;
+	margin-bottom: 70px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.copie4 {
+	width:800px;
+}
+.copie6 {
+	width:auto;
+}
+/*fin detail*/
+/*tableau*/
+.x {
+	height:1px;
+	}
+.xx {
+	height:2px;
+	}
+.y {
+	width:2px;
+	}
+
+.col1 {
+	width:80px;
+	text-indent:8px;
+}
+.col2 {
+	width:auto;
+	text-align:center;
+}
+.col3 {
+	text-align:center;
+	background-color: #e5c380;
+}
+.argent,
+.brun,
+.chrome,
+.cuivre,
+.cuivrerg,
+.fer,
+.laiton,
+.or,
+.verdegris,
+.zinc,
+.ferbril
+ {
+	background-position: center;
+    background-repeat: no-repeat;
+	color:#FFF;
+	text-indent:8px;
+}
+.argent
+{
+	background-image:url(couleur/argent.jpg);
+}
+.brun
+{
+	background-image:url(couleur/brun.jpg);
+}
+
+.chrome
+{
+	background-image:url(couleur/chrome.jpg);
+}
+.cuivre
+{
+	background-image:url(couleur/cuivre.jpg);
+}
+.cuivrerg
+{
+	background-image:url(couleur/cuivrerg.jpg);
+}
+.fer
+{
+	background-image:url(couleur/fer.jpg);
+}
+.laiton
+{
+	background-image:url(couleur/laiton.jpg);
+}
+.or
+{
+	background-image:url(couleur/or.jpg);
+}
+.verdegris
+{
+	background-image:url(couleur/verdegris.jpg);
+}
+.zinc
+{
+	background-image:url(couleur/zinc.jpg);
+}
+.ferbril
+{
+	background-image:url(couleur/ferbril.jpg);
+}
+.table,
+.table35
+{
+	width:100%;
+	margin-bottom:15px;
+	border-collapse: collapse;
+	font-size: 13px;
+}
+.table35,
+.table50
+{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.table35 img
+{
+	max-height:218px;
+}
+.table50
+{
+	width:60%;
+}
+
+/*fin tableau*/
+
+.copiex {
+    clear: both;
+}
+/*nom*/
+.nomsujet1a,
+.nomsujet1b
+{
+    background-color: #d98f59;
+	background-image: radial-gradient(#e0a174,#d37c3d 70%);
+}
+
+.nomsujet1b
+{
+    text-align:center;
+	font-size:18px;
+}
+
+.nomsujet4c {
+    text-align: center;
+	background-image: radial-gradient(#E2D586,#e0a174);
+}
+/*fin nom*/
+/*divers*/
+.oui {
+    width: 30px;
+    background-color: #B88070;
+}
+
+.non {
+    width: 30px;
+    background-color: #FFF;
+}
+td {
+    border: #7d451c solid 1px;
+	min-height:20px;
+}
+
+/*fin divers*/
+/*footer*/
+#accueil
+	    {
+		float:left;
+		width:300px;
+		line-height: 30px;
+		}
+#haut
+		{
+		width:300px;
+		margin:auto;
+		line-height: 30px;
+		text-align:center;
+		}
+#retour
+		{
+		float:right;
+		line-height: 30px;
+		width:300px;
+		}
+
+.pied
+    {
+		width:990px;
+	position: fixed;
+	height:40px;
+	bottom:0px;
+	padding-top:15px;
+	text-align:center;
+	z-index: 50;
+	background-color: #f9ece3;
+
+	}
+
+.boutonaccueil {
+    float: left;
+    width: 120px;
+    height: 20px;
+    margin-left: 90px;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: blue;
+    background-image: linear-gradient(160deg,white 20%,#e0a174);
+    box-shadow: 4px 4px 4px #575757;
+    transition: border 0.6s ease-in;
+}
+
+.boutonaccueil:hover {
+    background-image: linear-gradient(160deg,white ,#d37c3d);
+    box-shadow: 2px 2px 4px black;
+}
+
+.boutonhaut {
+    width: 120px;
+    margin: auto;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: blue;
+    background-image: linear-gradient(white 20%,#e0a174);
+    box-shadow: 4px 4px 4px #575757;
+    transition: border 0.6s ease-in;
+}
+
+.boutonhaut:hover {
+    background-image: linear-gradient(white ,#d37c3d);
+    box-shadow: 2px 2px 4px black;
+}
+
+.boutonretour {
+    float: right;
+    width: 120px;
+    height: 20px;
+    margin-right: 90px;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: blue;
+    background-image: linear-gradient(195deg,white 20%,#e0a174);
+    box-shadow: 4px 4px 4px #575757;
+    transition: border 0.6s ease-in;
+}
+
+.boutonretour:hover {
+    background-image: linear-gradient(195deg,white ,#d37c3d);
+    box-shadow: 2px 2px 4px black;
+}
+/*fin footer*/

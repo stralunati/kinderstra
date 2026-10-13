@@ -1,0 +1,238 @@
+body {
+  width: 1000px;
+  margin: auto;
+  font-family: Comic Sans MS;
+  background-color: #f9ece3;
+}
+
+.search-logo{
+	margin: 10px;
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.search-logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url('/montable/montable/montable/search-logo-80.png') center no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+/*titre*/
+header {
+  height: auto;
+  text-align: center;
+  background-color: #f9ece3;
+}
+
+.nom {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 40px;
+  vertical-align: bottom;
+  color: red;
+}
+
+.nomall {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 20px;
+  color: blue;
+}
+/*fin titre*/
+/*bpz*/
+.bpz200,
+.bpz300,
+.bpz400,
+.bpz500,
+.bpz600
+{
+  width: 400px;
+  margin: 10px auto 20px;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 5px;
+  border: #8d671d solid 3px;
+  background-color: #e5c380;
+}
+.bpz200 {
+  width: 205px;
+}
+.bpz300 {
+  width: 305px;
+}
+.bpz500 {
+  width: 505px;
+}
+.bpz600 {
+  width: 605px;
+}
+/** SAM : Colonne Img respensive **/
+[class ^="tableCol"] {
+  width:auto;
+  margin:auto;
+  text-align:center;
+}
+[class ^="tableCol"] > tbody > tr > td > img{
+  width: 100%;
+  max-height: 300px;
+}
+.tableCol1 > tbody > tr > td:nth-last-child(-n+1){
+  width: 82%;
+}
+.tableCol2 > tbody > tr > td:nth-last-child(-n+2){
+  width: 45%;
+}
+.tableCol3 > tbody > tr > td:nth-last-child(-n+3){
+  width: 31%;
+}
+.tableCol4 > tbody > tr > td:nth-last-child(-n+4){
+  width: 24%;
+}
+.tableCol5 > tbody > tr > td:nth-last-child(-n+5){
+  width: 20%;
+}
+.tableCol6 > tbody > tr > td:nth-last-child(-n+6){
+  width: 16%;
+}
+/** SAM : Fin Colonne Img respensive **/
+
+.module200,
+.module300,
+.module400,
+.module500
+{
+  width: 405px;
+  margin: 5px auto 5px auto;
+  text-align: center;
+  font-size: 15px;
+}
+.module200 {
+  width: 205px;
+}
+.module300 {
+  width: 305px;
+}
+.module500 {
+  width: 505px;
+}
+
+.copie {
+  width: 1000px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: #9b7120 solid 3px;
+  font-size: 15px;
+  background-color: #ebd09c;
+}
+.couleur {
+  width:50px;
+}
+.couleur,
+.nomsujet {
+  text-align: center;
+  background-image: radial-gradient(#E2D586,#e0a174);
+}
+.couleurbpz {
+    text-align: center;
+	background-image: radial-gradient(#E2D586,#d98f59 90%);
+}
+.nomsujet1c {
+    text-align: center;
+	background-image: radial-gradient(#e0a174,#d37c3d 70%);
+	background-color: #d98f59;
+}
+.nomsujet2c {
+    text-align: center;
+	background-color: #E2D586;
+}
+.nomsujet4c {
+    text-align: center;
+	background-image: radial-gradient(#E2D586,#e0a174);
+}
+td {
+  border: #7d451c solid 1px;
+  min-height:20px;
+  text-align: center;
+}
+.annee {
+  width: 46px;
+  text-align: center;
+  background-image: radial-gradient(#e0a174,#d37c3d 95%);
+}
+
+/*footer*/
+.pied {
+  position: relative;
+  width: 1000px;
+  height: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #f9ece3;
+}
+
+.boutonaccueil {
+  float: left;
+  width: 120px;
+  height: 20px;
+  margin-left: 90px;
+  border: #000 solid 1px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: blue;
+  background-image: linear-gradient(160deg,white 20%,#e0a174);
+  box-shadow: 4px 4px 4px #575757;
+  transition: border 0.6s ease-in;
+}
+
+.boutonaccueil:hover {
+  background-image: linear-gradient(160deg,white ,#d37c3d);
+  box-shadow: 2px 2px 4px black;
+}
+
+.boutonhaut {
+  width: 120px;
+  margin: auto;
+  border: #000 solid 1px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: blue;
+  background-image: linear-gradient(white 20%,#e0a174);
+  box-shadow: 4px 4px 4px #575757;
+  transition: border 0.6s ease-in;
+}
+
+.boutonhaut:hover {
+  background-image: linear-gradient(white ,#d37c3d);
+  box-shadow: 2px 2px 4px black;
+}
+
+.boutonretour {
+  float: right;
+  width: 120px;
+  height: 20px;
+  margin-right: 90px;
+  border: #000 solid 1px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: blue;
+  background-image: linear-gradient(195deg,white 20%,#e0a174);
+  box-shadow: 4px 4px 4px #575757;
+  transition: border 0.6s ease-in;
+}
+
+.boutonretour:hover {
+  background-image: linear-gradient(195deg,white ,#d37c3d);
+  box-shadow: 2px 2px 4px black;
+}
+/*fin footer*/

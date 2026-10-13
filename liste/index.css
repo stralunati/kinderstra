@@ -1,0 +1,257 @@
+header, section, article, nav, footer, aside, menu, hgroup, figure,
+figcaption {
+	display:block;
+}
+
+@font-face {
+	font-family: "agent";
+	src: url('../liste/divers/agentOrange.ttf');
+}
+
+body {
+	margin: auto;
+	text-align: center;
+	font-family: "agent";
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #fff;
+	position: relative;
+	background: rgba(0, 0, 0, 0.9);;
+}
+
+.search-logo{
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.search-logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url('/montable/montable/montable/search-logo-80.png') center no-repeat;
+}
+
+.container{
+	width:auto;
+	height: auto;
+}
+.texte {
+    text-align: left;
+    font-family: Comic Sans MS;
+    margin:auto;
+    width: auto;
+	max-width: 80%;
+    font-size: 20px;
+    font-weight: 200;
+}
+.titrepara {
+    margin-left: 40px;
+}
+.container h2 a{
+	text-decoration: none;
+	color: rgba(30,87,153,1);
+}
+
+.container h2 span{
+	font-size: 1.5em;
+}
+
+.container h2{
+	font-size: 1.3em;
+}
+/* Nouveau code CSS SAM 18/06/2016 */
+
+header{
+	margin-top: 20px;
+}
+
+#menu{
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+
+#menu ul{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+
+#menu ul li{
+	color: #000;
+	font-size: 1.5em;
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	min-width: 260px;
+	width: 31%;
+	min-height: 21vh;
+	margin: 7px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+88 */
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(114,173,223,0) 88%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(114,173,223,0) 88%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(114,173,223,0) 88%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+	transition: all 0.8s ease;
+}
+
+#menu ul li:hover{
+	z-index: 9999;
+	color: #fff;
+	background: rgba(30,87,153,0.6);
+}
+
+#menu ul li a{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: inherit;
+	padding-top: 5px;
+	transition: padding 0.6s ease;
+}
+
+#menu ul li:hover a{
+	padding-top: calc(21vh/3);
+}
+
+.contact_back{
+	margin-top: 100px;
+}
+/* Fin nouveau code */
+
+/* Début Page recherche */
+#searcharea {
+	position:  fixed;
+	font-size: 0.7em;
+	width:  100%;
+	z-index:  1000;
+	background: rgb(26, 26, 26);
+}
+/*#searcharea h1 {
+	margin: 10;
+	padding: 0;
+}*/
+
+#search {
+	position:  relative;
+	min-width:  50%;
+	height:  30px;
+	font-size:  1.2em;
+	margin-top:  50px;
+	color:  #C32519;
+}
+#count {
+	font-size:  1.2em;
+	margin-left:  10px;
+	color:  #C32519;
+}
+#update {
+	position:  absolute;
+	font-size: 0.6em;
+	width:  100%;
+	top:  250px;
+	margin:  0;
+	padding:  0;
+}
+
+#update ul {
+	list-style-type:  none;
+	margin-bottom:  80px;
+	padding:  0;
+}
+
+#update ul li {
+	color: #000;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	min-width: 30%;
+	height: 10vh;
+	margin: 7px;
+
+	transition: all 0.8s ease;
+}
+
+#update ul li:nth-child(odd){
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+88 */
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(114,173,223,0) 70%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(114,173,223,0) 70%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(114,173,223,0) 70%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+#update ul li:nth-child(even){
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#30cc6f+0,7db9e8+100&1+0,0+88 */
+	background: -moz-linear-gradient(top,  rgba(48,204,111,1) 0%, rgba(116,187,217,0) 70%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(48,204,111,1) 0%,rgba(116,187,217,0)708%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(48,204,111,1) 0%,rgba(116,187,217,0) 70%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30cc6f', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+#update ul li:hover{
+	z-index: 500;
+	color: #fff;
+}
+
+#update ul li:hover:nth-child(odd){
+	background: rgba(30,87,153,0.6);
+}
+
+#update ul li:hover:nth-child(even){
+	background: rgba(48, 204, 111,0.6);
+}
+
+#update ul li a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	padding-top: 5px;
+	transition: padding 0.6s ease;
+}
+
+#update ul li a:hover {
+	padding-top: 4vh;
+}
+.footer {
+	position:  fixed;
+	font-size: 1em;
+	width:  100%;
+	line-height: 60px;
+	z-index:  2000;
+	bottom:  0;
+	padding: 0 auto;
+	transition: all 0.7s ease;
+	color: rgb(48, 204, 111);
+	background: rgba(30,87,153,0.6);
+}
+
+.footer:hover{
+	padding: 20px 0;
+	font-size: 1.5em;
+	color: rgb(30,87,153);
+	background: rgba(48, 204, 111,0.6);
+}
+
+.footer a{
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Fin Page Recherche */

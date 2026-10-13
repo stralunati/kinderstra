@@ -1,0 +1,677 @@
+﻿:root {
+  --color: #e6e6ff;
+  --body-width: 940px;
+  --margin-principale: 2px;
+}
+
+body {
+  width: var(--body-width);
+  margin: auto;
+  font-family: Comic Sans MS;
+  background-color: var(--color);
+}
+
+header {
+  width: 940px;
+  background-color: var(--color);
+  margin: auto;
+  position: fixed;
+  z-index: 100;
+  transform: translateX(-2.5px);
+  border-left: 2px solid var(--color);
+  border-right: 2px solid var(--color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titre {
+  width: 590px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.saison {
+  width: 350px;
+  color: blue;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.table1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 940px;
+  height: 26px;
+  margin-top: 8px;
+}
+
+.coln,
+.colsjt,
+.colss,
+.coldesc,
+.col6 {
+  width: 32px;
+  font-weight: 100px;
+  border: 1px solid #000;
+}
+
+.coln {
+  width: 82px;
+  margin-right: 3px;
+  margin-left: 1px;
+  text-indent: 10px;
+  background-image: linear-gradient(90deg, #e6e6ff 10%, #c4c4ff);
+}
+
+.colsjt {
+  margin-right: 3px;
+  text-align: center;
+}
+
+.colss {
+  width: 163px;
+  margin-right: 3px;
+}
+
+.coldesc {
+  width: 276px;
+  margin-right: 3px;
+  text-indent: 10px;
+}
+
+.col6 {
+  width: 283px;
+  text-align: center;
+}
+
+.copie {
+  width: 940px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+}
+
+.colonne {
+  width: 940px;
+  position: absolute;
+  padding-bottom: 60px;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  top: 125px;
+}
+
+.colonneG {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 85px;
+  height: auto;
+  text-align: center;
+}
+.colonneG img {
+  padding-top: 12px;
+}
+.colonneD
+ {
+  display: inline;
+  width: 290px;
+  height: auto;
+}
+
+.texte {
+  width: 280px;
+  padding-left: 20px;
+  font-size: 13px;
+  text-indent: 50px;
+}
+
+.colonneD img
+ {
+  max-width: 98%;
+  max-height: 100%;
+  padding-left: 5px;
+ }
+
+.colonneM
+
+{
+  display: inline;
+  width: 570px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.copiex {
+  clear: both;
+}
+
+.table2 {
+  width: 940px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cola {
+  flex: 1;
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  text-indent: 40px;
+  border: 1px solid #000;
+  background-image: linear-gradient(90deg, #0093dd 10%, #88d7ff);
+}
+
+.table3
+ {
+  margin: auto;
+  width: 568px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table4 {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.table5 {
+  width: 940px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  border-collapse: collapse;
+  background-image: linear-gradient(90deg, #b9121b 10%, #f49197);
+}
+
+.x {
+  width: 1px;
+}
+
+.y {
+  height: 1px;
+  width: 100%;
+}
+
+.coldrap {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  min-width: 80px;
+  width: min-content;
+  padding-right: 4px;
+  text-align: center;
+  padding-top: 1px;
+}
+
+.col1,
+.col1v {
+  width: 80px;
+  min-width: 80%;
+  text-indent: 2px;
+  font-weight: bold;
+  border: 1px solid #000;
+  background-image: linear-gradient(90deg, #e6e6ff 10%, #c4c4ff);
+}
+
+.col1v {
+  background-image: linear-gradient(90deg, #e6e6ff 10%, #e0b0ff);
+}
+
+.col2 {
+  width: 30px;
+  min-width: 80%;
+  height: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.col2ok,
+.col2gr,
+.col2mq,
+.col2com,
+.col2vrt {
+  width: 30px;
+  min-width: 80%;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #000;
+  color: #000;
+  background-color: #dd9696;
+}
+
+.col2vrt {
+  background-color: #8aff8a;
+}
+
+.col2gr {
+  background-color: #bbb;
+}
+
+.col2com {
+  background-color: #dd9696;
+  background-image: url(montable/bulle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.col2mq {
+  background-color: #ff6;
+  background-image: url(montable/bulle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bulmq,
+.bulcom {
+  position: absolute;
+  display: none;
+  width: auto;
+  height: auto;
+  padding: 2px 5px 2px 5px;
+  background: #ff7;
+  border: 1px solid black;
+  color: #b9121b;
+  z-index: 500;
+}
+
+.bulcom {
+  background: #dd9696;
+  color: #000;
+}
+
+.manque:hover .bulmq {
+  display: block;
+}
+
+.manque:hover .bulcom {
+  display: block;
+}
+
+.col3 {
+  padding-left: 8px;
+ /* text-indent: 10px;*/
+  border: 1px solid #000;
+}
+.envers {
+  display: inline-block;
+  transform: scale(-1,-1);
+}
+
+.col4,
+.col4a
+ {
+  display: block;
+  width: 82px;
+  height: 22px;
+  text-indent: 3px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-right: 3px;
+  border: 1px solid #000;
+  background-image: linear-gradient(90deg, #f1df64 10%, #f8efb2);
+}
+
+.col4a
+ {
+  width: 420px;
+  text-indent: 10px;
+  font-weight: normal;
+  background-image: var(--color);
+}
+
+.col5 {
+  width: auto;
+  border: 1px solid #000;
+  text-indent: 10px;
+}
+
+/*fin module*/
+/*drap*/
+
+.drap,
+.drapeur,
+.drapcan,
+.drape-e,
+.drapfr,
+.drapall,
+.drapita,
+.drapbel,
+.drappol,
+.draprus,
+.drapmex,
+.drapsui,
+.drapesp,
+.drapaus,
+.drapukr,
+.drapisr,
+.draparg,
+.draplib,
+.draprou,
+.draphol,
+.drapbre,
+.drapang,
+.drapchn {
+  display: inline-block;
+  min-width: 30px;
+  height: 20px;
+  background-position: left;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+[class^="drap"]:hover:after {
+  font-style: normal;
+  display: block;
+  position: absolute;
+  top: -40px;
+  left: -25px;
+  right: 0;
+  bottom: 0;
+  line-height: 38px;
+  width: 80px;
+  height: 38px;
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+.drap {
+  background-color: #b00000;
+}
+
+.drapeur {
+  background-image: url(drap/drap_eur.png);
+}
+
+.drape-e {
+  background-image: url(drap/drap_e-e.png);
+}
+
+.drapcan {
+  background-image: url(drap/drap_ca.png);
+}
+
+.drapfr {
+  background-image: url(drap/drap_fr.png);
+}
+
+.drapall {
+  background-image: url(drap/drap_all.png);
+}
+
+.drapita {
+  background-image: url(drap/drap_ita.png);
+}
+
+.drapbel {
+  background-image: url(drap/drap_bel.png);
+}
+
+.drappol {
+  background-image: url(drap/drap_pol.png);
+}
+
+.draprus {
+  background-image: url(drap/drap_rus.png);
+}
+
+.drapmex {
+  background-image: url(drap/drap_mex.png);
+}
+
+.drapsui {
+  background-image: url(drap/drap_sui.png);
+}
+
+.drapesp {
+  background-image: url(drap/drap_esp.png);
+}
+
+.drapaus {
+  background-image: url(drap/drap_aus.png);
+}
+
+.drapukr {
+  background-image: url(drap/drap_ukr.png);
+}
+
+.drapisr {
+  background-image: url(drap/drap_isr.png);
+}
+
+.draparg {
+  background-image: url(drap/drap_arg.png);
+}
+
+.draplib {
+  background-image: url(drap/drap_lib.png);
+}
+
+.draprou {
+  background-image: url(drap/drap_rou.png);
+}
+
+.draphol {
+  background-image: url(drap/drap_hol.png);
+}
+
+.drapbre {
+  background-image: url(drap/drap_bre.png);
+}
+
+.drapang {
+  background-image: url(drap/drap_ang.png);
+}
+
+.drapchn {
+  background-image: url(drap/drap_chn.png);
+}
+
+.drapeur:hover:after {
+  content: "Eur";
+}
+
+.drape-e:hover:after {
+  content: "Eur Est";
+}
+
+.drapcan:hover:after {
+  content: "Canada";
+}
+
+.drapfr:hover:after {
+  content: "Fr";
+}
+
+.drapall:hover:after {
+  content: "Allemagne";
+}
+
+.drapita:hover:after {
+  content: "Italie";
+}
+
+.drapbel:hover:after {
+  content: "Belgique";
+}
+
+.drappol:hover:after {
+  content: "Pologne";
+}
+
+.draprus:hover:after {
+  content: "Russie";
+}
+
+.drapmex:hover:after {
+  content: "Mexique";
+}
+
+.drapsui:hover:after {
+  content: "Suisse";
+}
+
+.drapesp:hover:after {
+  content: "Espagne";
+}
+
+.drapaus:hover:after {
+  content: "Australie";
+}
+
+.drapukr:hover:after {
+  content: "Ukraine";
+}
+
+.drapisr:hover:after {
+  content: "Israël";
+}
+
+.draparg:hover:after {
+  content: "Argentine";
+}
+
+.draplib:hover:after {
+  content: "Liban";
+}
+
+.draprou:hover:after {
+  content: "Roumanie";
+}
+
+.draphol:hover:after {
+  content: "Hollande";
+}
+
+.drapbre:hover:after {
+  content: "Brésil";
+}
+
+.drapang:hover:after {
+  content: "Angleterre";
+}
+
+.drapchn:hover:after {
+  content: "Chine";
+}
+
+/*fin drap*/
+/*detail*/
+.infinimix {
+  margin-bottom: 26px;
+  margin-top: 20px;
+}
+
+#accueil {
+  width: 300px;
+  line-height: 30px;
+}
+
+#haut {
+  width: 300px;
+  margin: auto;
+  line-height: 30px;
+  text-align: center;
+}
+
+#retour {
+  line-height: 30px;
+  width: 300px;
+}
+
+.pied {
+  width: 940px;
+  position: fixed;
+  height: 40px;
+  bottom: 0px;
+  padding-top: 15px;
+  text-align: center;
+  background-color: #e6e6ff;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boutonaccueil {
+  width: 120px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 90px;
+  color: blue;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-image: linear-gradient(160deg, white 20%, #77d2ff);
+  box-shadow: 4px 4px 4px #575757;
+  -webkit-transition: border 0.6s ease-in;
+  -moz-transition: border 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: border 0.6s ease-in;
+}
+
+.boutonaccueil:hover {
+  box-shadow: 2px 2px 4px black;
+  background-image: linear-gradient(160deg, white, #0093dd);
+}
+
+.boutonhaut {
+  width: 120px;
+  height: 20px;
+  color: blue;
+  font-size: 14px;
+  line-height: 20px;
+  margin: auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-image: linear-gradient(white 20%, #77d2ff);
+  box-shadow: 4px 4px 4px #575757;
+  -webkit-transition: border 0.6s ease-in;
+  -moz-transition: border 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: border 0.6s ease-in;
+}
+
+.boutonhaut:hover {
+  box-shadow: 2px 2px 4px black;
+  background-image: linear-gradient(white, #0093dd);
+}
+
+.boutonretour {
+  width: 120px;
+  margin-right: 90px;
+  color: blue;
+  line-height: 20px;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-image: linear-gradient(195deg, white 20%, #77d2ff);
+  box-shadow: 4px 4px 4px #575757;
+  -webkit-transition: border 0.6s ease-in;
+  -moz-transition: border 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: border 0.6s ease-in;
+}
+
+.boutonretour:hover {
+  background-image: linear-gradient(195deg, white, #0093dd);
+  box-shadow: 2px 2px 4px black;
+}

@@ -1,0 +1,370 @@
+body{
+	width: 900px;
+	margin: auto;
+	font-family: Comic Sans MS;
+	background-color: #e6e6ff;
+}
+
+.search-logo{
+	margin: 10px;
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.search-logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url('/montable/montable/montable/search-logo-80.png') center no-repeat;
+}
+
+header{
+	background-color:#e6e6ff;
+	margin : auto;
+	position: fixed;
+	z-index: 100;
+}
+a {
+	text-decoration: none;
+}
+.kserie {
+	  color:red;
+      text-align:center;
+	  vertical-align:text-bottom;
+	  font-size:28px;
+	  line-height: 60px;
+     }
+.table1 {
+	width: 900px;
+	height: 100px;
+	margin: auto;
+	border-collapse: collapse;
+}
+.titrecol1
+	{
+		width: 100px;
+	min-width: 80%;
+	font-size: 18px;
+	color: blue;
+	border:1px solid #000;
+	}
+.titrecol2,
+.titrecol2v,
+.titrecol2vv
+	{
+		width: 30px;
+	min-width: 80%;
+	font-size: 16px;
+	text-align: center;
+	color: blue;
+	border:1px solid #000;
+ 	}
+.titrecol2v
+    {
+	width: 162px;
+	font-size: 18px;
+	}
+.titrecol3
+	{
+		width: 58px;
+	min-width: 80%;
+	font-size: 18px;
+	text-align: center;
+	color: blue;
+	border:1px solid #000;
+	}
+.titrecol4
+	{
+		width: auto;
+	min-width: 80%;
+	font-size: 18px;
+	text-align: center;
+	color: blue;
+	border:1px solid #000;
+	}
+.page {
+	width: 900px;
+	position: absolute;
+	padding-bottom: 60px;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	top: 100px;
+}
+.table2{
+	margin:auto;
+	margin-top:10px;
+}
+.cola{
+	width: 100px;
+	height: 60px;
+	vertical-align: bottom;
+	text-align: center;
+	padding-bottom:25px;
+    }
+.colb{
+	width: 790px;
+	height:auto;
+	vertical-align: bottom;
+	padding-bottom: 0px;
+    }
+.cole{
+	height: 20px;
+	font-size: 15px;
+	text-align:left;
+	text-indent:40px;
+	border:1px solid #000;
+	background-image: linear-gradient(90deg,#0093dd 10%,#88d7ff);
+}
+
+.drap,
+.drapeur,
+.drapfr,
+.drapall,
+.drapita,
+.drapbel,
+.drappol,
+.draprus,
+.drapmex,
+.drapsui,
+.drapesp,
+.drapjp {
+    width: 30px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+	color:#B6B6B6;
+}
+.drap {
+	background-color :#B00000;
+}
+.drapeur {
+    background-image: url(drap/drap_eur.png);
+}
+
+.drapfr {
+    background-image: url(drap/drap_fr.png);
+}
+
+.drapall {
+    background-image: url(drap/drap_all.png);
+}
+
+.drapita {
+    background-image: url(drap/drap_ita.png);
+}
+
+.drapbel {
+    background-image: url(drap/drap_bel.png);
+}
+.drappol {
+    background-image: url(drap/drap_pol.png);
+}
+.draprus {
+    background-image: url(drap/drap_rus.png);
+}
+.drapmex {
+    background-image: url(drap/drap_mex.png);
+}
+.drapsui {
+    background-image: url(drap/drap_sui.png);
+}
+.drapesp {
+    background-image: url(drap/drap_esp.png);
+}
+.drapjp {
+    background-image: url(drap/drap_jp.png);
+}
+
+
+.table3 {
+	margin: auto;
+	width: 900px;
+	border-collapse: collapse;
+	font-size: 13px;
+}
+.x {
+	width:1px;}
+.y {
+	height:2px;
+	}
+
+.table4 {
+	width:900px;
+	height:30px;
+	font-size:18px;
+	text-align:center;
+	background-color:#B9121B;
+	color:#FFF;
+	margin-top:10px;
+	border:2px solid black;
+}
+.hp
+{
+color:#B9121B;
+text-indent:10px;
+font-weight:bold;
+width: 100px;
+}
+.col1, .col1v
+	{
+	width: 100px;
+	min-width: 80%;
+	text-indent:10px;
+	font-weight:bold;
+	height:20px;
+	border:1px solid #000;
+	}
+.col1v
+    {
+	background-image: linear-gradient(90deg,#e6e6ff 10%,#e0b0ff);
+	}
+.col2
+	{
+	width: 30px;
+	min-width: 80%;
+	height:20px;
+	text-align: center;
+	border: 1px solid #000;
+	color: #000;
+	}
+.col2ok, .col2gr, 
+.col2nn, .col2bpz
+	{
+	width: 30px;
+	min-width: 80%;
+	text-align: center;
+	font-weight:bold;
+	border: 1px solid #000;
+	color: #000;
+	background-color:#dd9696;
+	}
+.col2gr
+{
+	background-color:#999;
+    }
+.col2bpz /*utilisé que pour la série Drolly Dinos hp35 et autre écriture en normal dans les cases "col2ok" */
+{
+	font-weight:normal;
+    }
+	
+.col2nn
+{
+	background-color:#c4c4ff;
+    }
+
+.col3
+	{
+	width:58px;
+	min-width: 80%;
+	text-align: center;
+	border:1px solid #000;
+	}
+.col4
+	{
+	width: auto;
+	min-width: 80%;
+	text-indent: 10px;
+	border:1px solid #000;
+    }
+#accueil
+	    {
+		float:left;
+		width:300px;
+		line-height: 30px;
+		}
+#haut
+		{
+		width:300px;
+		margin:auto;
+		line-height: 30px;
+		text-align:center;
+		}
+#retour
+		{
+		float:right;
+		line-height: 30px;
+		width:300px;
+		}
+.pied
+    {
+		width:900px;
+	position: fixed;
+	height:40px;
+	bottom:0px;
+	padding-top:15px;
+	text-align:center;
+	background-color: #e6e6ff;
+	z-index: 50;
+	}
+.boutonaccueil
+	    {
+		float:left;
+		width:120px;
+		height:20px;
+		line-height: 20px;
+		margin-left:90px;
+		color: blue;
+	font-size: 14px;
+	border:1px solid #000;
+	border-radius:10px;
+	background-image:linear-gradient(160deg, white 20%, #77d2ff);
+	box-shadow: 4px 4px 4px #575757;
+ 	-webkit-transition: border .6s ease-in;
+    -moz-transition: border .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: border .6s ease-in;
+		}
+.boutonaccueil:hover
+{
+    box-shadow:2px 2px 4px black;
+	background-image:linear-gradient(160deg, white, #0093dd);
+}
+.boutonhaut
+{
+	width: 120px;
+	height:20px;
+	color: blue;
+	font-size: 14px;
+	line-height: 20px;
+	margin:auto;
+	border:1px solid #000;
+	border-radius:10px;
+	background-image:linear-gradient(white 20%, #77d2ff);
+	box-shadow: 4px 4px 4px #575757;
+ 	-webkit-transition: border .6s ease-in;
+    -moz-transition: border .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: border .6s ease-in;
+	}
+.boutonhaut:hover
+{
+    box-shadow:2px 2px 4px black;
+	background-image:linear-gradient(white, #0093dd);
+}
+.boutonretour
+		{
+		float:right;
+		width:120px;
+		margin-right:90px;
+		color: blue;
+		line-height: 20px;
+	font-size: 14px;
+	border:1px solid #000;
+	border-radius:10px;
+	background-image:linear-gradient(195deg, white 20%, #77d2ff);
+	box-shadow: 4px 4px 4px #575757;
+ 	-webkit-transition: border .6s ease-in;
+    -moz-transition: border .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: border .6s ease-in;
+		}
+.boutonretour:hover
+		{
+		background-image:linear-gradient(195deg,white, #0093dd);
+box-shadow: 2px 2px 4px black;
+		}

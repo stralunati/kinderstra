@@ -1,0 +1,455 @@
+body {
+	width: 100%;
+	margin: auto;
+	font-family: "Comic Sans MS";
+	background-attachment:fixed
+}
+
+.search-logo{
+	margin: 10px;
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.search-logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url('/montable/montable/montable/search-logo-80.png') center no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+header {
+	position: fixed;
+	height: 125px;
+	z-index: 100;
+	width: 100%;
+	background:#fff  url(divers/header.jpg) no-repeat;
+	background-attachment:fixed;
+	text-align: center;
+}
+
+.titrepage {
+	position: relative;
+	margin-top:6px;
+	/*margin-bottom:6px;*/
+	min-width: 700px;
+	width: 100%;
+	line-height: 80px;
+	z-index: 100;
+}
+
+.titrepage .logo_gauche{
+	position: absolute;
+	left: 10%;
+}
+.titrepage .logo_centre{
+
+}
+.titrepage .logo_droit{
+	position: absolute;
+	right: 10%;
+}
+
+.table1 {
+	margin: 0 auto;
+	height: 40px;
+	min-width: 700px;
+	background-color: #ebd09c;
+}
+
+a {
+	text-decoration: none;
+}
+
+.drap,
+.drapeur,
+.drape-e,
+.drapfr,
+.drapcan,
+.drapall,
+.drapita,
+.drapind,
+.drapbel,
+.drappol,
+.draprus,
+.drapmex,
+.drapsui,
+.drapesp,
+.drapaus,
+.drapukr,
+.drapisr,
+.draparg,
+.draplib,
+.draprou,
+.draphol,
+.drapbre,
+.drapang {
+width: 30px;
+height: 20px;
+background-position:center;
+background-repeat: no-repeat;
+color: #B6B6B6;
+position: relative;
+text-align:center;
+}
+
+[class^="drap"]:hover:after {
+font-style: normal;
+display: block;
+position: absolute;
+top: -40px;
+left: -85px;
+right: 0;
+bottom: 0;
+line-height: 38px;
+width: 80px;
+height: 38px;
+color: white;
+background-color: black;
+font-size: 16px;
+text-align: center;
+	z-index: 150;
+
+}
+
+.drap {
+background-color: #e2bc72;
+}
+.drapeur {
+background-image:url(../montable/montable/drap/drap_eur.png);
+}
+.drape-e {
+background-image: url(../montable/montable/drap/drap_e-e.png);
+}
+.drapfr {
+background-image: url(../montable/montable/drap/drap_fr.png);
+}
+.drapcan {
+background-image: url(../montable/montable/drap/drap_ca.png);
+}
+.drapall {
+background-image: url(../montable/montable/drap/drap_all.png);
+}
+.drapita {
+background-image: url(../montable/montable/drap/drap_ita.png);
+}
+.drapind {
+background-image: url(../montable/montable/drap/drap_ind.png);
+}
+.drapbel {
+background-image: url(../montable/montable/drap/drap_bel.png);
+}
+.drappol {
+background-image: url(../montable/montable/drap/drap_pol.png);
+}
+.draprus {
+background-image: url(../montable/montable/drap/drap_rus.png);
+}
+.drapmex {
+background-image: url(../montable/montable/drap/drap_mex.png);
+}
+.drapsui {
+background-image: url(../montable/montable/drap/drap_sui.png);
+}
+.drapesp {
+background-image: url(../montable/montable/drap/drap_esp.png);
+}
+.drapaus {
+background-image: url(../montable/montable/drap/drap_aus.png);
+}
+.drapukr {
+background-image: url(../montable/montable/drap/drap_ukr.png);
+}
+.drapisr {
+background-image: url(../montable/montable/drap/drap_isr.png);
+}
+.draparg {
+background-image: url(../montable/montable/drap/drap_arg.png);
+}
+.draplib {
+background-image: url(../montable/montable/drap/drap_lib.png);
+}
+.draprou {
+background-image: url(../montable/montable/drap/drap_rou.png);
+}
+.draphol {
+background-image: url(../montable/montable/drap/drap_hol.png);
+}
+.drapbre {
+background-image: url(../montable/montable/drap/drap_bre.png);
+}
+.drapang {
+background-image: url(../montable/montable/drap/drap_ang.png);
+}
+.drapeur:hover:after {
+content: "Eur";
+}
+.drape-e:hover:after {
+content: "Eur Est";
+}
+.drapfr:hover:after {
+content: "France";
+}
+.drapcan:hover:after {
+content: "Canada";
+}
+.drapall:hover:after {
+content: "Allemagne";
+}
+.drapita:hover:after {
+content: "Italie";
+}
+.drapind:hover:after {
+content: "Inde";
+}
+
+.drapbel:hover:after {
+content: "Belgique";
+}
+.drappol:hover:after {
+content: "Pologne";
+}
+.draprus:hover:after {
+content: "Russie";
+}
+.drapmex:hover:after {
+content: "Mexique";
+}
+.drapsui:hover:after {
+content: "Suisse";
+}
+.drapesp:hover:after {
+content: "Espagne";
+}
+.drapaus:hover:after {
+content: "Australie";
+}
+.drapukr:hover:after {
+content: "Ukraine";
+}
+.drapisr:hover:after {
+content: "Israël";
+}
+.draparg:hover:after {
+content: "Argentine";
+}
+.draplib:hover:after {
+content: "Liban";
+}
+.draprou:hover:after {
+content: "Roumanie";
+}
+.draphol:hover:after {
+content: "Hollande";
+}
+.drapbre:hover:after {
+content: "Brésil";
+}
+.drapang:hover:after {
+content: "Angleterre";
+}
+.titrecol1 {
+	width: 140px;
+	font-size: 16px;
+	text-align: center;
+	color: blue;
+}
+.titrecol2,
+.titrecol2a {
+	width: 210px;
+	font-size: 20px;
+	text-align: center;
+	color: blue;
+}
+.titrecol2a {
+	width: 105px;
+}
+.titrecol3 {
+	width: 380px;
+	font-size: 22px;
+	text-align: center;
+	color: blue;
+}
+
+.titrecol4 {
+	width: 30px;
+	font-size: 15px;
+	text-align: center;
+	color: blue;
+}
+
+.titrecol5 {
+	width: 67px;
+	font-size: 16px;
+	text-align: center;
+	color: blue;
+}
+
+.page {
+	/*position: absolute;*/
+	display:inline-block;
+	width: 100%;
+	min-width: 700px;
+	margin-top: 155px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:100px;
+}
+
+.bpz {
+	position: relative;
+	color: black;
+}
+
+.bpz img {
+	display: none;
+}
+
+.bpz:hover {
+	background: none; /* Correction d'un bug d'Internet Explorer. */
+	z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+}
+
+.bpz:hover img {
+	display: inline; /* On affiche l'infobulle. */
+	position: absolute;
+	white-space: nowrap;
+	/* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+	top: 30px; /* On positionne notre infobulle. */
+	left: 80px;
+}
+
+.table2 {
+	margin: auto;
+	margin-bottom: 55px;
+	background-color: #f1ddb8;
+
+}
+
+.table2 tr,td,th {
+	border: 1px solid black;
+	font-family: "Comic Sans MS";
+}
+
+.col1 {
+	width: 140px;
+	height: 20px;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	color:#000080
+}
+
+.col3 {
+	width: 380px;
+	height: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	text-indent: 10px;
+}
+
+.col4 {
+	width: 30px;
+	height: 20px;
+	font-size: 13px;
+	text-align: center;
+
+}
+
+.col5 {
+	width: 67px;
+	height: 20px;
+	font-size: 13px;
+	text-align: center;
+}
+
+footer{
+	z-index:99;
+	position: fixed;
+	bottom: 0;
+	min-width: 510px;
+	width: 100%;
+	margin-bottom:15px;
+	padding: 0;
+	text-align: center;
+}
+
+.pied {
+display:flex;
+width: 900px;
+margin: auto;
+}
+
+.boutonaccueil {
+/*float: left;*/
+width: 120px;
+height: 20px;
+line-height: 20px;
+margin-left: 90px;
+color: blue;
+font-size: 14px;
+border: 1px solid #000;
+border-radius: 10px;
+background-image: linear-gradient(160deg, white 30%, #A7D1D9);
+box-shadow: 4px 4px 4px #575757;
+-webkit-transition: border .6s ease-in;
+-moz-transition: border .6s ease-in;
+-o-transition: all .6s ease-in;
+transition: border .6s ease-in;
+}
+
+.boutonaccueil:hover {
+box-shadow: 2px 2px 4px black;
+background-image: linear-gradient(160deg, white 10%, #96C6CF);
+}
+
+.boutonhaut {
+width: 120px;
+height: 20px;
+color: blue;
+font-size: 14px;
+line-height: 20px;
+margin: auto;
+border: 1px solid #000;
+border-radius: 10px;
+background-image: linear-gradient(white 50%, #A7D1D9);
+box-shadow: 4px 4px 4px #575757;
+-webkit-transition: border .6s ease-in;
+-moz-transition: border .6s ease-in;
+-o-transition: all .6s ease-in;
+transition: border .6s ease-in;
+}
+
+.boutonhaut:hover {
+box-shadow: 2px 2px 4px black;
+background-image: linear-gradient(white 15%, #96C6CF);
+}
+
+.boutonretour {
+/*float: right;*/
+width: 120px;
+margin-right: 90px;
+color: blue;
+line-height: 20px;
+font-size: 14px;
+border: 1px solid #000;
+border-radius: 10px;
+background-image: linear-gradient(195deg, white 30%, #A7D1D9);
+box-shadow: 4px 4px 4px #575757;
+-webkit-transition: border .6s ease-in;
+-moz-transition: border .6s ease-in;
+-o-transition: all .6s ease-in;
+transition: border .6s ease-in;
+}
+
+.boutonretour:hover {
+background-image: linear-gradient(195deg, white 10%, #96C6CF);
+box-shadow: 2px 2px 4px black;
+}
