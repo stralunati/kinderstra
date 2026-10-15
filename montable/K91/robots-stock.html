@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atelier K91 — Stock et assemblages</title>
+<style>
+:root{--ink:#34291d;--line:#a76629;--paper:#fff8e7;--gold:#e8c68a;--accent:#8b4e19}*{box-sizing:border-box}body{margin:0;background:#f3e1b9;color:var(--ink);font:16px system-ui,Segoe UI,sans-serif}header{padding:28px max(20px,calc((100% - 1180px)/2));background:linear-gradient(120deg,#e7bf7e,#f8e9c9);border-bottom:4px solid var(--line)}h1{margin:0 0 6px;font-size:clamp(1.6rem,3vw,2.5rem)}header p{margin:0;max-width:850px}.wrap{max-width:1180px;margin:24px auto;padding:0 18px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px;margin:18px 0;box-shadow:0 3px 10px #673c1715}h2{margin:0 0 6px;font-size:1.35rem}.hint{color:#66533e;margin:0 0 14px}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:700px}th,td{border:1px solid #bd9661;padding:8px;text-align:center}th{background:#ecd09c}td:first-child,th:first-child{text-align:left}.group-row th{text-align:left;background:#d9b879;color:#352615;font-size:1rem;padding:10px 12px}.colorname{display:flex;align-items:center;gap:8px}.colorhead{display:flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap}.swatch{width:19px;height:19px;border:1px solid #655;border-radius:50%;display:inline-block;flex:none}.qty{width:76px;padding:7px;border:1px solid #b89a70;border-radius:5px;font:inherit;text-align:center}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}button{border:0;border-radius:6px;padding:10px 16px;font:600 1rem inherit;cursor:pointer;background:#804918;color:white}button.secondary{background:#e5d1ae;color:#3e3022;border:1px solid #b89a70}button:hover{filter:brightness(1.06)}.stats{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}.stat{background:#f3e4c6;padding:12px 16px;border-radius:8px;min-width:145px}.stat strong{display:block;font-size:1.55rem}.robots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.robot{padding:14px;border:1px solid #c7a879;border-radius:8px;background:white}.robot h3{margin:0 0 10px}.part{display:flex;justify-content:space-between;gap:8px;padding:4px 0;border-bottom:1px dotted #ddd}.pill{font-size:.84rem;color:#66533e}.empty{padding:18px;background:#f8eed9;border-radius:8px}.warning{color:#8c311e;font-weight:600}.small{font-size:.9rem;color:#655744}footer{text-align:center;padding:10px 0 30px;color:#69583f}@media(max-width:600px){.panel{padding:14px}.qty{width:62px}}
+</style></head><body>
+<header><h1>Atelier K91 — stock et assemblages</h1><p>Renseignez vos pièces disponibles. L’atelier propose des robots réalisables et détaille les couleurs utilisées pour chaque assemblage.</p></header>
+<main class="wrap">
+<section class="panel"><h2>1. Saisir le stock</h2><p class="hint">Entrez les quantités par couleur. Les corps, clics, bras et jambes sont liés au modèle n°1 à 4. Les lunettes et antennes ont un stock commun aux quatre modèles.</p><div class="tablewrap"><table id="stock"><thead><tr><th>Pièce</th><th>Modèle</th><th><span class="colorhead"><i class="swatch" style="background:#793c79"></i>Violet</span></th><th><span class="colorhead"><i class="swatch" style="background:#1b9b45"></i>Vert</span></th><th><span class="colorhead"><i class="swatch" style="background:#f07813"></i>Orange</span></th><th><span class="colorhead"><i class="swatch" style="background:#1596bd"></i>Bleu</span></th><th><span class="colorhead"><i class="swatch" style="background:#d72832"></i>Rouge</span></th><th><span class="colorhead"><i class="swatch" style="background:#f3d51a"></i>Jaune</span></th><th><span class="colorhead"><i class="swatch" style="background:#292929"></i>Noir</span></th><th><span class="colorhead"><i class="swatch" style="background:#123b70"></i>Bleu foncé</span></th></tr></thead><tbody></tbody></table></div><div class="actions"><button id="build">Calculer les robots réalisables</button><button class="secondary" id="reset">Effacer les quantités</button></div><p class="small">Les quantités sont enregistrées automatiquement dans ce navigateur.</p></section>
+<section class="panel"><h2>2. Résultat de l’assemblage</h2><div id="result"><div class="empty">Saisissez les stocks, puis cliquez sur « Calculer les robots réalisables ».</div></div></section>
+<section class="panel"><h2>Règles prises en compte</h2><ul><li>Le corps, les lunettes et l’antenne doivent être assortis. Lunettes et antennes ont chacune un stock commun, un seul modèle et huit couleurs.</li><li>La tête existe en deux formes ; les deux formes sont disponibles dans les huit couleurs.</li><li>La tête, le clic, les bras et les jambes partagent une seconde couleur, qui peut différer de celle du corps.</li><li>Les clics, bras et jambes sont liés au modèle n°1 à 4. Aucun pied n’est nécessaire.</li></ul></section>
+</main><footer>Atelier de montage K91</footer>
+<script>
+const colors=[['Violet','#793c79'],['Vert','#1b9b45'],['Orange','#f07813'],['Bleu','#1596bd'],['Rouge','#d72832'],['Jaune','#f3d51a'],['Noir','#292929'],['Bleu foncé','#123b70']];
+[...document.querySelectorAll('#stock thead th')].slice(2).forEach((th,i)=>th.innerHTML=`<span class="colorhead"><i class="swatch" style="background:${colors[i][1]}"></i>${colors[i][0]}</span>`);
+const rows=[['Corps','1'],['Corps','2'],['Corps','3'],['Corps','4'],['Lunettes','Modèle unique'],['Antenne','Modèle unique'],['Tête','Forme 1'],['Tête','Forme 2'],['Clic','1'],['Clic','2'],['Clic','3'],['Clic','4'],['Bras','1'],['Bras','2'],['Bras','3'],['Bras','4'],['Jambes','1'],['Jambes','2'],['Jambes','3'],['Jambes','4']];
+const tbody=document.querySelector('#stock tbody');
+
+// Fonction pour générer une ligne d'en-tête des couleurs
+function createColorHeaderRow() {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `<th>Pièce</th><th>Modèle</th>` + colors.map(c => `<th><span class="colorhead"><i class="swatch" style="background:${c[1]}"></i>${c[0]}</span></th>`).join('');
+  return tr;
+}
+
+rows.forEach(([part,model],ri)=>{
+  if(ri===0){
+    const group=document.createElement('tr');
+    group.className='group-row';
+    group.innerHTML=`<th colspan="10">Groupe 1 — Corps, lunettes et antenne</th>`;
+    tbody.appendChild(group);
+  }
+  if(ri===6){
+    // Répétition de la ligne des couleurs au début du Groupe 2
+    tbody.appendChild(createColorHeaderRow());
+
+    const group=document.createElement('tr');
+    group.className='group-row';
+    group.innerHTML=`<th colspan="10">Groupe 2 — Tête, clic, bras et jambes</th>`;
+    tbody.appendChild(group);
+  }
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td>${part}</td><td>${model}</td>`+colors.map((c,ci)=>`<td><input class="qty" type="number" min="0" step="1" inputmode="numeric" aria-label="${part}, modèle ${model}, ${c[0]}" data-row="${ri}" data-color="${ci}" value="0"></td>`).join('');
+  tbody.appendChild(tr);
+});
+
+const inputs=[...document.querySelectorAll('.qty')];
+function read(){const d=rows.map(()=>Array(8).fill(0));inputs.forEach(x=>d[+x.dataset.row][+x.dataset.color]=Math.max(0,Math.floor(+x.value||0)));return d}
+function store(){try{localStorage.setItem('k91-stock-v2',JSON.stringify(read()))}catch{}}
+function load(){try{let d=JSON.parse(localStorage.getItem('k91-stock-v2')||'null');if(!d){const old=JSON.parse(localStorage.getItem('k91-stock-v1')||'null');if(old){d=[...old.slice(0,4),old[6],old[7],...old.slice(4,6),...old.slice(8)];localStorage.setItem('k91-stock-v2',JSON.stringify(d))}}if(d)inputs.forEach(x=>x.value=d[+x.dataset.row]?.[+x.dataset.color]||0)}catch{}}
+load();
+const total=a=>a.reduce((s,n)=>s+n,0);
+
+function calculate(){
+  store();
+  const s=read(), b=s.slice(0,4).map(x=>x.slice()), glasses=s[4].slice(), antenna=s[5].slice(), h=s.slice(6,8).map(x=>x.slice()), clic=s.slice(8,12).map(x=>x.slice()), arms=s.slice(12,16).map(x=>x.slice()), legs=s.slice(16,20).map(x=>x.slice());let builds=[];
+  
+  while(true){
+    let candidates=[];
+    for(let m=0;m<4;m++)
+      for(let bc=0;bc<8;bc++)
+        for(let ac=0;ac<8;ac++){
+          let head=total([h[0][ac],h[1][ac]]), cap=Math.min(b[m][bc],glasses[bc],antenna[bc],head,clic[m][ac],arms[m][ac],legs[m][ac]);
+          if(cap>0) candidates.push({m,bc,ac,cap,options:(b[m].filter((v,c)=>v&&glasses[c]&&antenna[c]).length)*(Array.from({length:8},(_,c)=>c).filter(c=>h[0][c]+h[1][c]&&clic[m][c]&&arms[m][c]&&legs[m][c]).length)})
+        }
+    if(!candidates.length)break;
+    candidates.sort((a,z)=>a.options-z.options||z.cap-a.cap);
+    let q=candidates[0],hcrow=h[0][q.ac]>=h[1][q.ac]?0:1; 
+    b[q.m][q.bc]--;glasses[q.bc]--;antenna[q.bc]--;h[hcrow][q.ac]--;clic[q.m][q.ac]--;arms[q.m][q.ac]--;legs[q.m][q.ac]--;
+    builds.push({model:q.m+1,bc:q.bc,hf:hcrow+1,hc:q.ac,cc:q.ac,ac:q.ac,lc:q.ac});
+  }
+
+  const usedCats=[['Corps',s.slice(0,4).flat().reduce((a,x)=>a+x,0),builds.length],['Têtes',total(s[6])+total(s[7]),builds.length],['Lunettes',total(s[4]),builds.length],['Antennes',total(s[5]),builds.length],['Clics',s.slice(8,12).flat().reduce((a,x)=>a+x,0),builds.length],['Bras',s.slice(12,16).flat().reduce((a,x)=>a+x,0),builds.length],['Jambes',s.slice(16,20).flat().reduce((a,x)=>a+x,0),builds.length]];
+  const cards=builds.map((r,i)=>`<article class="robot"><h3>Robot ${i+1} <span class="pill">— K91 n°${r.model}</span></h3><div class="part"><span>Corps + lunettes + antenne</span><span class="colorname"><i class="swatch" style="background:${colors[r.bc][1]}"></i>${colors[r.bc][0]}</span></div><div class="part"><span>Tête — forme ${r.hf}</span><span class="colorname"><i class="swatch" style="background:${colors[r.hc][1]}"></i>${colors[r.hc][0]}</span></div><div class="part"><span>Clic</span><span class="colorname"><i class="swatch" style="background:${colors[r.cc][1]}"></i>${colors[r.cc][0]}</span></div><div class="part"><span>Bras</span><span class="colorname"><i class="swatch" style="background:${colors[r.ac][1]}"></i>${colors[r.ac][0]}</span></div><div class="part"><span>Jambes</span><span class="colorname"><i class="swatch" style="background:${colors[r.lc][1]}"></i>${colors[r.lc][0]}</span></div></article>`).join('');
+  
+  let html=`<div class="stats"><div class="stat"><strong>${builds.length}</strong>robot${builds.length>1?'s':''} réalisable${builds.length>1?'s':''}</div>${usedCats.map(([n,available,used])=>`<div class="stat"><strong>${used} / ${available}</strong>${n} utilisées / en stock</div>`).join('')}</div>`;
+  if(builds.length)html+=`<div class="robots">${cards}</div>`;else html+='<div class="empty">Aucun assemblage complet possible avec les quantités saisies. Vérifiez qu’il y a au moins une pièce dans chaque catégorie et un corps ainsi que des jambes du même modèle.</div>';
+  document.querySelector('#result').innerHTML=html;
+}
+ document.querySelector('#build').addEventListener('click',calculate);
+ inputs.forEach(x=>x.addEventListener('input',()=>{store();calculate()}));
+ calculate();
+ document.querySelector('#reset').addEventListener('click',()=>{
+  inputs.forEach(x=>x.value=0);
+  try{localStorage.removeItem('k91-stock-v1');localStorage.removeItem('k91-stock-v2')}catch{}
+  document.querySelector('#result').innerHTML='<div class="empty">Stocks effacés. Vous pouvez saisir de nouvelles quantités.</div>';
+});
+</script></body></html>
